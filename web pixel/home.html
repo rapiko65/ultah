@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBDD SASTA</title>
+    <link rel="stylesheet" href="utama.css">
+    
+</head>
+<body>
+    <div class="skybg" id="skybg">
+        <div class="tekssky" id="tekssky">
+            <img src="./asset/bubble2.png" class="bub2">
+            <div class="teksnya" >
+                <h1>HBD SASTAA</h1>
+                <p>Hbd buat sasta yaaa semoga panjang umur sehat selalu dan diberi kelancaran untuk urusan kedepannya
+                    aku disini cuma mau ngucapi selamat ulang tahunnn🎂🎂🎉 btw kalo aku ada salah ato hal lain yang bikin u sakit hati ato apa maaf ya sasss
+                </p>
+            </div>
+        </div>
+        <div class="sky" id="sky"></div>
+    </div>
+    <!-- bg -->
+    <div class="bgg" id="bgg" alt="bgg">
+        <div class="char">
+           
+            <img src="./asset/love.gif" class="love">
+            <div class="teks">
+               
+                <img src="./asset/bubble.png" class="bub">
+                <p>Click Akuu!</p>
+            </div>
+            <a href="#tekssky" id="boci"><img src="./asset/boci.gif" class="boci"></a>
+        </div>
+    <div class="overlay">
+      
+        <img src="./asset/bg3.png" class="bg4">
+        <img src="./asset/bg3.png" class="bg5">
+        <img src="./asset/bg3.png" class="bg6">
+    
+        
+    </div>
+       
+        <div class="bg2">
+            <img src="./asset/bg1.png" class="bg3" >
+            <img src="./asset/bg1.png" class="bg1" alt="bg3">
+        </div>
+        <div class="bg">    
+          <img src="./asset/bg2.png" >
+          <img src="./asset/bg2.png" >
+          <img src="./asset/bg2.png" >
+          <img src="./asset/bg2.png" >
+        </div>
+    </div>
+
+   
+    <!-- end bg -->
+    <!-- bub skrip -->
+    <script>
+        document.getElementById('boci').addEventListener('click', function(event) {
+//   event.preventDefault(); // Mencegah perilaku default tautan
+  
+  var hiddenElement = document.getElementById('tekssky');
+  
+  if (hiddenElement.style.opacity === '0' || hiddenElement.style.opacity === '') {
+    hiddenElement.style.opacity = '1'; // Menampilkan elemen
+  } else {
+    hiddenElement.style.opacity = '0'; // Menyembunyikan elemen
+  }
+});
+    </script>
+   <!-- end bub skrip -->
+    <!-- starts js -->
+    <script>
+        function createStar() {
+  const star = document.createElement("div");
+  star.className = "star";
+  star.style.left = Math.random() * window.innerWidth + "px";
+  star.style.top = Math.random() * window.innerHeight + "px";
+  document.body.appendChild(star);
+
+  setTimeout(() => {
+    star.remove();
+  }, 5000);
+}
+
+function animateStars() {
+  setInterval(() => {
+    createStar();
+  }, 200);
+}
+
+animateStars();
+    </script>
+    <!-- end starts js -->
+    <!-- page js -->
+    <script>
+    window.location.href = "#bgg";
+    </script>
+    <!-- end page js -->
+</body>
+
+
+</html>

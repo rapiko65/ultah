@@ -1,0 +1,184 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+body{
+    background: linear-gradient(#030a0e,#235774,#91C8E4);
+    /* background-color:#33BBC5; */
+    padding:0;
+    margin: 0;
+    /* overflow: hidden; */
+ 
+   
+}
+.bgg{
+    scroll-margin-top:-30rem ;
+}
+
+.bg img{
+    width: 25%;
+    float: left;
+    margin-top: 600px;
+}
+
+.bg2 .bg1{
+    position: absolute;
+    margin-top: 290px;
+    float: left;
+     -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    
+}
+
+.bg2 .bg3{
+     position: absolute;
+    margin-top: 290px;
+    float: right;
+    right: 20px;
+   
+}
+
+.bg4{
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+    position: absolute;
+    margin-top: 90px;
+    right:70px;
+    float: right;
+}
+
+.bg5{
+    transform: translateX(0px);
+    animation: float 4s ease-out infinite;
+    position: absolute;
+    margin-top: 50px;
+    left:70px;
+    float: right;
+}
+.bg6{
+    transform: translateX(0px);
+    animation: float 8s ease-out infinite;
+    position: absolute;
+    margin-top: 20px;
+    right:270px;
+    float: right;
+}
+@keyframes float{
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.char .boci{
+    width: 10%;
+    position: absolute;
+    margin-top:470px ;
+    left: 450px;
+
+}
+.teks .bub{
+    position: absolute;
+    left: 500px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    bottom: -1960px;
+    animation: pop 2s ease-in;
+}
+.teks p{
+    position: absolute;
+    /* margin-top:450px ; */
+    bottom: -1945px;
+    left:540px;
+    animation: pop 2s ease-in;
+}
+@keyframes pop{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 2;
+    }
+}
+
+
+.char .love{
+    width: 5%;
+    position: absolute;
+    margin-top:360px ;
+    left:480px;    
+}
+
+.skybg{
+    margin-bottom: 2000px;
+    /* background-color: aqua; */
+    height: 20px;
+    width: 25px;
+}
+
+.tekssky {
+    margin-left: 330px;
+    margin-top: 130px;
+    opacity: 0.8;
+    animation: anu 3s ease-in-out;
+    animation: float 6s ease-out infinite;
+    opacity: 0;
+}
+.teksnya{
+    
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    height: 200px;
+    width: 500px;
+    animation: anu 3s ease-in-out;
+}
+@keyframes anu {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 2;
+    }
+}
+
+
+.sky {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    overflow: hidden;
+  }
+
+
+  .star {
+    position: absolute;
+    width:1px;
+    height: 1px;
+    background-color: white;
+  }
+  
+  @keyframes starFall {
+    from {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  
+
+
